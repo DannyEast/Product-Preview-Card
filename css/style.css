@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+.background {
+  background-color: #f2ebe3;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+
+.container {
+  width: 80rem;
+  height: 50rem;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-self: center; }
+
+.img__box {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.product__image {
+  border-radius: 2rem 0rem 0rem 2rem;
+  width: 100%;
+  object-fit: cover; }
+
+.product__description {
+  font-size: 3rem;
+  background-color: white;
+  padding: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 2rem; }
+
+.product__perfume {
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-family: montserrat;
+  opacity: 70%;
+  font-size: 1.5rem; }
+
+.product__name {
+  font-family: Fraunces;
+  font-size: 4rem;
+  padding-top: 2rem; }
+
+.product__p1 {
+  font-family: montserrat;
+  padding-top: 1rem;
+  opacity: 60%; }
+
+.product__price-1 {
+  font-size: 4rem;
+  font-family: Fraunces;
+  color: #3c8067;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  display: inline-block; }
+
+.product__price-2 {
+  align-self: center;
+  opacity: 60%;
+  text-decoration: line-through;
+  display: inline-block;
+  align-self: center; }
+
+.product__btn {
+  display: block;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #3c8067;
+  width: 100%;
+  padding: 1.25rem 0rem;
+  color: white;
+  font-family: montserrat; }
+
+.product__btn-cart {
+  margin-right: 1.5rem; }
+
+.img__small {
+  display: none; }
+
+@media screen and (max-width: 800px) {
+  * {
+    font-size: 80%; }
+  .product__perfume {
+    font-size: 2rem;
+    letter-spacing: 7.5px; }
+  .product__btn {
+    margin-top: 2rem;
+    padding: 2rem 0rem; }
+  .product__name {
+    font-size: 5rem; }
+  .product__description {
+    padding: 3rem; }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-content: center;
+    width: 90%;
+    height: 90%;
+    border-radius: 2.5rem; }
+  .product__image {
+    display: none; }
+  .img__small {
+    display: flex;
+    border-radius: 2rem 2rem 0rem 0rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .product__price-2 {
+    margin-top: 12px; } }
